@@ -50,7 +50,7 @@ const JsonDecoder = () => {
                 }
                 <ReactJson
                     style={{marginTop: "10px"}}
-                    quotesOnKeys={true}
+                    quotesOnKeys={false}
                     src={jsonValue}/>
             </Col>
         </Row>
