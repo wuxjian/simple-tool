@@ -40,10 +40,10 @@ const Base64Page = () => {
                 <Space vertical style={{width: "100%", height: "100%", justifyContent: "center"}}>
                     <Button
                         onClick={handleEnButtonClick}
-                        theme='light' type='tertiary' style={{marginRight: 8}}> 加 密 </Button>
+                        theme='light' type='tertiary' style={{marginRight: 8}}> 编 码 </Button>
                     <Button
                         onClick={handleDeButtonClick}
-                        theme='light' type='tertiary' style={{marginRight: 8}}> 解 密 </Button>
+                        theme='light' type='tertiary' style={{marginRight: 8}}> 解 码 </Button>
                 </Space>
             </Col>
             <Col sm={24} md={11}>
