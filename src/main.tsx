@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import JsonDecoder from "./pages/json";
 import Base64Page from "./pages/base64";
 import NotFound from "./pages/404";
+import UrlEncode from './pages/url-encode';
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
                     <Route index element={<JsonDecoder/>}/>
                     <Route path={"/json"} element={<JsonDecoder/>}/>
                     <Route path={"/base64"} element={<Base64Page/>}/>
+                    <Route path={"/urlEncode"} element={<UrlEncode/>}/>
                     <Route path={"*"} element={<NotFound/>} />
                 </Route>
             </Routes>

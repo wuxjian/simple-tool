@@ -1,4 +1,4 @@
-import {IconEdit, IconStar} from '@douyinfe/semi-icons';
+import {IconEdit, IconStar, IconSetting} from '@douyinfe/semi-icons';
 import {Layout, Nav} from '@douyinfe/semi-ui';
 import {Outlet, useNavigate} from "react-router-dom";
 
@@ -13,8 +13,7 @@ function App() {
                     items={[
                         {itemKey: 'json', text: 'JSON', icon: <IconStar/>},
                         {itemKey: 'base64', text: 'Base64', icon: <IconEdit/>},
-                        // { itemKey: 'urlEncode', text: 'UrlEncode', icon: <IconSetting /> },
-                        // { itemKey: 'urlDecode', text: 'UrlDecode', icon: <IconUser /> },
+                        { itemKey: 'urlEncode', text: 'UrlEncode', icon: <IconSetting /> },
                     ]}
                     onSelect={key => navigate(key.itemKey as string)}
                     header={{
